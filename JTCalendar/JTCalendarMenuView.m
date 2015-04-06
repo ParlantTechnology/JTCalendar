@@ -55,7 +55,10 @@
     
     for(int i = 0; i < NUMBER_PAGES_LOADED; ++i){
         JTCalendarMenuMonthView *monthView = [JTCalendarMenuMonthView new];
-                
+        if (i != NUMBER_PAGES_LOADED / 2) {
+            monthView.textLabel.textColor = [UIColor lightGrayColor];
+        }
+        
         [self addSubview:monthView];
         [monthsViews addObject:monthView];
     }

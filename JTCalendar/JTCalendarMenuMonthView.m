@@ -63,7 +63,7 @@
 
 - (void)reloadAppearance
 {
-    self.textLabel.textColor = self.calendarManager.calendarAppearance.menuMonthTextColor;
+//    self.textLabel.textColor = self.calendarManager.calendarAppearance.menuMonthTextColor;
     self.textLabel.font = self.calendarManager.calendarAppearance.menuMonthTextFont;
 }
 
