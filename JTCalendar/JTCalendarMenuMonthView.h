@@ -12,6 +12,7 @@
 @interface JTCalendarMenuMonthView : UIView
 
 @property (weak, nonatomic) JTCalendar *calendarManager;
+@property (strong, nonatomic) UILabel *textLabel;
 
 - (void)setCurrentDate:(NSDate *)currentDate;
 

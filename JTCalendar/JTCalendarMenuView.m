@@ -106,7 +106,9 @@
     
     for(int i = 0; i < NUMBER_PAGES_LOADED; ++i){
         JTCalendarMenuMonthView *monthView = monthsViews[i];
-        
+        if (i != NUMBER_PAGES_LOADED / 2) {
+            monthView.textLabel.textColor = [UIColor lightGrayColor];
+        }
         dayComponent.month = i - (NUMBER_PAGES_LOADED / 2);
         NSDate *monthDate = [calendar dateByAddingComponents:dayComponent toDate:self.currentDate options:0];
         [monthView setCurrentDate:monthDate];
